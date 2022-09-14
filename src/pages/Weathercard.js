@@ -12,7 +12,7 @@ export const Weathercard = ({ cityData }) => {
     if (cityData || id) {
       axios
         .get(
-          `http://dataservice.accuweather.com/currentconditions/v1/${
+          `https://dataservice.accuweather.com/currentconditions/v1/${
             id ? id : cityData.Key
           }?apikey=Flv0JApXKtTrcqH8lNrXUYD82BIBAfyh`
         )

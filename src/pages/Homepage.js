@@ -12,7 +12,7 @@ function Homepage() {
     e.preventDefault();
     axios
       .get(
-        `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=Flv0JApXKtTrcqH8lNrXUYD82BIBAfyh&q=${cityValue}`
+        `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=Flv0JApXKtTrcqH8lNrXUYD82BIBAfyh&q=${cityValue}`
       )
       .then((res) => {
         setCityData(res.data[0]);
@@ -20,7 +20,7 @@ function Homepage() {
       })
       .catch((err) => console.log(err.message));
   };
-  
+
   return (
     <div className="wrapper">
       <form
